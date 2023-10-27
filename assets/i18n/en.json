@@ -1,84 +1,57 @@
 {
-  "HEADER":{
-    "SEARCH": {
-      "TEXT": "Search.."
+  "HEADER": {
+    "MORE": {
+      "TEXT": "More"
     }
   },
   "MENUITEMS": {
-    "USER":{
-      "POST": "Manager"
+    "MENU": {
+      "TEXT": "MENU"
     },
-    "MAIN": {
-      "TEXT": "-- Main"
+    "DASHBOARD": {
+      "TEXT": "Dashboard",
+      "BADGE": "New"
+      
     },
-    "HOME": {
-      "TEXT": "Home",
-      "LIST": {
-        "DASHBOARD1": "Dashboard 1",
-        "DASHBOARD2": "Dashboard 2",
-        "DASHBOARD3": "Dashboard 3"
-      }
+    "FORMMANAGER": {
+      "TEXT": "Form Manager",
+      "BADGE": "10"
     },
-    "ADVANCE-TABLE": {
-      "TEXT": "Advance Table"
+    "APPROVALS": {
+      "TEXT": "Approvals",
+      "BADGE": "6"
+      
     },
-    "APPS": {
-      "TEXT": "-- Apps"
+    "REVIEWS": {
+      "TEXT": "Reviews",
+      "BADGE": "5"
     },
-    "CALENDAR": {
-      "TEXT": "Calendar"
+    "USERROLES": {
+      "TEXT": "User Roles",
+      "BADGE": "4"
+     
     },
-    "TASK": {
-      "TEXT": "Task"
+    "USERS": {
+      "TEXT": "Users",
+      "BADGE": "3"
     },
-    "CONTACTS": {
-      "TEXT": "Contacts"
+    
+    "REPORTS": {
+      "TEXT": "Reports & Analytics",
+      "BADGE": "6"
     },
-    "EMAIL": {
-      "TEXT": "Email",
-      "LIST": {
-        "INBOX": "Inbox",
-        "COMPOSE": "Compose",
-        "READ": "Read Email"
-      }
+    "WORKFLOWS": {
+      "TEXT": "Workflow Approvals",
+      "BADGE": "9"
     },
-    "MORE-APPS": {
-      "TEXT": "More Apps",
-      "LIST": {
-        "CHAT": "Chat",
-        "SUPPORT": "Support",
-        "DRAG-DROP": "Drag & Drop",
-        "CONTACT-GRID": "Contact Grid"
-      }
-    },
-    "COMPONENTS": {
-      "TEXT": "-- Components"
-    },
-    "WIDGETS": {
-      "TEXT": "Widgets",
-      "LIST": {
-        "CHART-WIDGET": "Chart-Widget",
-        "DATA-WIDGET": "Data-Widget"
-      }
-    },
-    "FORMS": {
-      "TEXT": "Forms",
-      "LIST": {
-        "CONTROLS": "Form Controls",
-        "ADVANCE": "Advance Control",
-        "EXAMPLE": "Form Examples",
-        "VALIDATION": "Form Validation",
-        "WIZARD": "Wizard",
-        "EDITORS": "Editors"
-      }
-    },
-    "TABLES": {
-      "TEXT": "Tables",
-      "LIST": {
-        "BASIC": "Basic Tables",
-        "MATERIAL": "Material Tables",
-        "NGX-DATATABLE": "NGX-Datatable"
-      }
+    "BILLING": {
+      "TEXT": "Billings",
+      "BADGE": ""
+    }
+    ,
+    "SETTINGS": {
+      "TEXT": "Settings",
+      "BADGE": ""
     }
   }
 }

@@ -1,0 +1,4236 @@
+/*! qforms - v3.5.2 - 22-12-2021 */
+@charset "UTF-8";
+.qforms-control-unit-1 {
+  width: 27px;
+}
+.qforms-control-unit-2 {
+  width: 54px;
+}
+.qforms-control-unit-3 {
+  width: 81px;
+}
+.qforms-control-unit-4 {
+  width: 108px;
+}
+.qforms-control-unit-5 {
+  max-width: 400px;
+  width: 52%;
+}
+.qforms-tags-list {
+  display: none;
+  position: absolute;
+  width: 260px;
+  max-height: 300px;
+  overflow: auto;
+  padding-bottom: 5px;
+  background-color: #fff;
+  border: 1px solid #a4afb7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 10000;
+}
+.qforms-tags-list__group-title {
+  color: #495157;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-tags-list__group-title .eicon-info-circle {
+  padding-right: 5px;
+  color: #2c3345;
+  font-size: 14px;
+}
+.qforms-tags-list__item {
+  font-size: 10px;
+  padding: 6px 15px;
+  cursor: pointer;
+}
+.qforms-tags-list__item:before {
+  content: ">";
+  font-size: 8px;
+  padding-right: 5px;
+}
+.qforms-tags-list__item:hover {
+  background-color: #e6e9ec;
+}
+.qforms-tags-list__teaser {
+  border-top: 2px solid #d5dadf;
+  padding-top: 4px;
+  margin-top: 4px;
+}
+.qforms-tags-list__teaser-title {
+  color: #6d7882;
+}
+.qforms-tags-list__teaser-text {
+  padding: 2px 15px 8px;
+  line-height: 1.5;
+  font-size: 12px;
+}
+.qforms-tags-list__teaser-link {
+  color: #93003c;
+  text-decoration: underline;
+  font-style: italic;
+  font-weight: 700;
+}
+.qforms-dynamic-cover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  height: 27px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.qforms-dynamic-cover__title {
+  padding: 0 8px;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.qforms-dynamic-cover__remove,
+.qforms-dynamic-cover__settings {
+  color: #c2cbd2;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.qforms-dynamic-cover__remove:hover,
+.qforms-dynamic-cover__settings:hover {
+  color: #a4afb7;
+}
+.qforms-control-type-wysiwyg .qforms-dynamic-cover {
+  margin-top: 10px;
+}
+.qforms-tag-settings-popup {
+  position: absolute;
+  width: 260px;
+  background-color: #e6e9ec;
+  -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+.qforms-tag-settings-popup:before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 5px;
+  border: 10px solid transparent;
+  border-bottom-color: #fff;
+}
+.qforms-tag-settings-popup .qforms-control-type-section:first-child {
+  margin: 0;
+}
+.qforms-tag-controls-stack-empty {
+  background-color: #fff;
+  padding: 10px;
+  font-size: 13px;
+  text-align: center;
+}
+.qforms-control-dynamic-switcher {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 27px;
+  cursor: pointer;
+  border: 1px solid #d5dadf;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background: #fff;
+}
+.qforms-control-dynamic-switcher.e-control-tool {
+  height: 20px;
+  border: 0;
+}
+.qforms-control-dynamic-switcher-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.qforms-control-dynamic-switcher .eicon-database {
+  font-size: 12px;
+}
+.qforms-control-dynamic-value .e-global__popover-toggle,
+.qforms-control-dynamic-value .qforms-control-dynamic-switcher,
+.qforms-control-dynamic-value .qforms-control-tag-area {
+  display: none;
+}
+.qforms-panel-box {
+  margin-top: 10px;
+  background-color: #fff;
+}
+.qforms-panel-box-content {
+  padding: 20px 20px 10px;
+}
+.qforms-button {
+  display: inline-block;
+}
+.qforms-panel-alert {
+  background-color: #fcfcfc;
+  padding: 15px;
+  border-left: 3px solid transparent;
+  position: relative;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: left;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  -webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.07);
+}
+.qforms-panel-alert a {
+  color: inherit;
+}
+.qforms-panel-alert.qforms-panel-alert-info {
+  border-color: #2c3345;
+  background-color: #f3fcff;
+}
+.qforms-panel-alert.qforms-panel-alert-success {
+  border-color: #39b54a;
+}
+.qforms-panel-alert.qforms-panel-alert-warning {
+  border-color: #fcb92c;
+}
+.qforms-panel-alert.qforms-panel-alert-danger {
+  border-color: #d72b3f;
+}
+.qforms-label {
+  display: inline;
+  padding: 0.2em 0.6em 0.3em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  -webkit-border-radius: 0.25em;
+  border-radius: 0.25em;
+  text-transform: capitalize;
+}
+.qforms-label.qforms-label-default {
+  background-color: #a4afb7;
+}
+.qforms-label.qforms-label-info {
+  background-color: #5bc0de;
+}
+.qforms-label.qforms-label-success {
+  background-color: #5cb85c;
+}
+.qforms-label.qforms-label-warning {
+  background-color: #f0ad4e;
+}
+.qforms-label.qforms-label-danger {
+  background-color: #d9534f;
+}
+.qforms-control-field-description,
+.qforms-descriptor {
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.4;
+  color: #a4afb7;
+}
+.qforms-controls-popover {
+  display: none;
+  position: absolute;
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  left: 0;
+  right: 0;
+  margin: -4px auto 5px;
+  padding-top: 15px;
+  width: 90%;
+  z-index: 10000;
+  background-color: #fff;
+}
+.qforms-controls-popover:before {
+  content: "";
+  position: absolute;
+  top: -16px;
+  right: 22px;
+  border: 8px solid transparent;
+  border-bottom-color: #fff;
+}
+.qforms-controls-popover div.qforms-control {
+  background-color: transparent;
+}
+.qforms-controls-popover div.qforms-control:before {
+  content: none;
+}
+#qforms-controls .pojo-widget-button-collapse {
+  display: none;
+}
+#qforms-panel-global .qforms-nerd-box .qforms-nerd-box-icon {
+  margin-top: 20px;
+}
+.qforms-control {
+  --control-title-size: 12px;
+  background-color: #fff;
+  position: relative;
+  padding: 0 20px 15px;
+}
+.qforms-control a {
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px dotted transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all ease-in-out 0.3s;
+  transition: all 0.3s ease-in-out;
+}
+.qforms-control a:hover {
+  border-bottom-color: inherit;
+}
+.qforms-control a.qforms-responsive-switcher {
+  border-bottom: 0;
+}
+.qforms-control .qforms-control-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.qforms-control .qforms-control-title {
+  font-size: var(--control-title-size);
+  line-height: 1;
+  margin-right: 5px;
+}
+.qforms-control .qforms-control-spinner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-control.qforms-control-type-divider {
+  padding: 0;
+  background-color: transparent;
+}
+.qforms-control.qforms-control-type-divider .qforms-control-content {
+  border: solid #e6e9ec;
+  border-width: 1px 0 0;
+  background-color: #fff;
+  height: 15px;
+}
+.qforms-control.qforms-control-separator-default:not(
+    .qforms-control-type-divider
+  ).qforms-control-wp {
+  margin-top: 15px;
+}
+.qforms-control.qforms-control-separator-default:not(
+    .qforms-control-type-divider
+  ).qforms-control-wp:before {
+  content: "";
+  height: 1px;
+  display: block;
+  margin-bottom: 15px;
+  background-color: transparent;
+}
+.qforms-control.qforms-control-separator-before {
+  padding-top: 15px;
+}
+.qforms-control.qforms-control-separator-before:before {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #e6e9ec;
+}
+.qforms-control.qforms-control-separator-after:after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #e6e9ec;
+}
+.qforms-control.qforms-control-separator-after
+  + .qforms-control-type-tabs
+  + .qforms-control-separator-default,
+.qforms-control.qforms-control-separator-after:not(.qforms-hidden-control)
+  + .qforms-control-separator-default {
+  padding-top: 15px;
+}
+.qforms-control.qforms-control-deprecated,
+.qforms-control.qforms-control-deprecated .qforms-control-field-description {
+  color: #b01b1b;
+}
+.qforms-control.qforms-control-hidden-label > * > * > .qforms-control-title,
+.qforms-control.qforms-control-hidden-label > * > .qforms-control-title,
+.qforms-control.qforms-hidden-control {
+  display: none;
+}
+.qforms-control.qforms-control-type-heading .qforms-control-title {
+  font-weight: 700;
+  margin: 0;
+}
+body:not(.qforms-device-desktop)
+  .qforms-control.qforms-control-responsive-desktop,
+body:not(.qforms-device-laptop)
+  .qforms-control.qforms-control-responsive-laptop,
+body:not(.qforms-device-mobile)
+  .qforms-control.qforms-control-responsive-mobile,
+body:not(.qforms-device-mobile_extra)
+  .qforms-control.qforms-control-responsive-mobile_extra,
+body:not(.qforms-device-tablet)
+  .qforms-control.qforms-control-responsive-tablet,
+body:not(.qforms-device-tablet_extra)
+  .qforms-control.qforms-control-responsive-tablet_extra,
+body:not(.qforms-device-widescreen)
+  .qforms-control.qforms-control-responsive-widescreen {
+  display: none;
+}
+.qforms-control.qforms-control-type-select .qforms-control-input-wrapper {
+  position: relative;
+}
+.qforms-control.qforms-control-type-select
+  .qforms-control-input-wrapper
+  select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-size: 12px;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  text-transform: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  padding-left: 5px;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.qforms-control.qforms-control-type-select
+  .qforms-control-input-wrapper
+  select.e-select-placeholder {
+  color: #a4afb7;
+}
+.qforms-control.qforms-control-type-select
+  .qforms-control-input-wrapper
+  option.e-option-placeholder {
+  display: none;
+}
+.qforms-control.qforms-control-type-select .qforms-control-input-wrapper:after {
+  font-family: eicons;
+  content: "\e8ad";
+  font-size: 12px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 5px;
+  pointer-events: none;
+}
+.qforms-control-custom_attributes_pro .qforms-nerd-box-message,
+.qforms-control-custom_css_pro .qforms-nerd-box-message {
+  margin-top: 5px;
+}
+.qforms-control.qforms-control-custom_css_title {
+  font-size: 12px;
+}
+.qforms-control.qforms-open .qforms-panel-heading-toggle .eicon:before,
+.qforms-panel-scheme-item.qforms-open
+  .qforms-panel-heading-toggle
+  .eicon:before {
+  content: "\e92a";
+}
+.qforms-control:not(.qforms-open) .qforms-panel-heading-toggle .eicon:before,
+.qforms-panel-scheme-item:not(.qforms-open)
+  .qforms-panel-heading-toggle
+  .eicon:before {
+  content: "î¤Š";
+}
+.qforms-panel-heading {
+  display: table;
+  table-layout: fixed;
+  height: 40px;
+  padding: 0 20px;
+  width: 100%;
+  border-bottom: 1px solid #e6e9ec;
+  cursor: pointer;
+}
+.qforms-panel-heading > * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.qforms-panel-heading-toggle {
+  width: 20px;
+  color: #495157;
+}
+.qforms-panel-heading-title {
+  color: #495157;
+  font-weight: 700;
+}
+.qforms-control-wp {
+  line-height: 1.5;
+}
+.qforms-control-wp p {
+  margin: 15px 0;
+}
+.qforms-control-field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-label-block > .qforms-control-content > .qforms-control-field {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.qforms-label-block
+  > .qforms-control-content
+  > .qforms-control-field
+  > .qforms-control-input-wrapper {
+  width: 100%;
+  margin-top: 10px;
+}
+.qforms-label-block.qforms-control-hidden-label.qforms-label-block
+  > .qforms-control-content
+  > .qforms-control-field
+  > .qforms-control-input-wrapper,
+.qforms-label-block.qforms-control-hidden-label:not(.qforms-control-dynamic)
+  > .qforms-control-content
+  > .qforms-control-field
+  > .qforms-control-input-wrapper {
+  margin-top: 0;
+}
+.qforms-label-inline
+  > .qforms-control-content
+  > .qforms-control-field
+  > .qforms-control-title {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.qforms-label-inline
+  > .qforms-control-content
+  > .qforms-control-field
+  > .qforms-control-input-wrapper {
+  margin-left: auto;
+}
+.qforms-control-field-description {
+  margin-top: 10px;
+}
+.qforms-group-control-attachment_alert .qforms-control-field-description {
+  margin-top: 0;
+}
+.qforms-required {
+  color: #b01b1b;
+}
+.qforms-units-choices {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+.qforms-units-choices input {
+  display: none;
+}
+.qforms-units-choices input:not(:checked) + label {
+  color: #a4afb7;
+}
+.qforms-units-choices input.e-units-placeholder + label {
+  color: #c2cbd2;
+  text-decoration: underline;
+}
+.qforms-units-choices input:checked + label {
+  text-decoration: underline;
+}
+.qforms-units-choices label {
+  cursor: pointer;
+  padding: 0 2px;
+  text-transform: uppercase;
+  font-size: 9px;
+}
+.qforms-control-responsive-switchers {
+  --selected-option: 0;
+  --pointer-position: var(--selected-option);
+  position: relative;
+  width: 2em;
+  height: 2em;
+  margin: calc(-2em + var(--control-title-size)) 0;
+  margin-right: 5px;
+}
+.qforms-control-responsive-switchers__holder {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+  border: 1px solid transparent;
+}
+.qforms-control-responsive-switchers.qforms-responsive-switchers-open {
+  z-index: 11000;
+}
+.qforms-control-responsive-switchers.qforms-responsive-switchers-open
+  .qforms-responsive-switcher {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-control-responsive-switchers.qforms-responsive-switchers-open
+  .qforms-responsive-switcher:hover {
+  color: #2c3345;
+}
+.qforms-control-responsive-switchers.qforms-responsive-switchers-open
+  .qforms-control-responsive-switchers__holder {
+  top: calc(-1 * var(--selected-option) * 2em);
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.qforms-responsive-switcher {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+  height: 0;
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  opacity: 0;
+  -webkit-transition: 0.15s;
+  -o-transition: 0.15s;
+  transition: 0.15s;
+  font-size: 12px;
+}
+a.qforms-responsive-switcher {
+  color: #a4afb7;
+}
+a.qforms-responsive-switcher:hover {
+  color: #2c3345;
+}
+.qforms-device-widescreen
+  .qforms-responsive-switcher.qforms-responsive-switcher-widescreen {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-device-widescreen
+  .qforms-responsive-switchers-open:not(:hover)
+  .qforms-responsive-switcher.qforms-responsive-switcher-widescreen {
+  color: #2c3345;
+}
+.qforms-device-desktop
+  .qforms-responsive-switcher.qforms-responsive-switcher-desktop {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-device-desktop
+  .qforms-responsive-switchers-open:not(:hover)
+  .qforms-responsive-switcher.qforms-responsive-switcher-desktop {
+  color: #2c3345;
+}
+.qforms-device-laptop
+  .qforms-responsive-switcher.qforms-responsive-switcher-laptop {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-device-laptop
+  .qforms-responsive-switchers-open:not(:hover)
+  .qforms-responsive-switcher.qforms-responsive-switcher-laptop {
+  color: #2c3345;
+}
+.qforms-device-tablet_extra
+  .qforms-responsive-switcher.qforms-responsive-switcher-tablet_extra {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-device-tablet_extra
+  .qforms-responsive-switchers-open:not(:hover)
+  .qforms-responsive-switcher.qforms-responsive-switcher-tablet_extra {
+  color: #2c3345;
+}
+.qforms-device-tablet
+  .qforms-responsive-switcher.qforms-responsive-switcher-tablet {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-device-tablet
+  .qforms-responsive-switchers-open:not(:hover)
+  .qforms-responsive-switcher.qforms-responsive-switcher-tablet {
+  color: #2c3345;
+}
+.qforms-device-mobile_extra
+  .qforms-responsive-switcher.qforms-responsive-switcher-mobile_extra {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-device-mobile_extra
+  .qforms-responsive-switchers-open:not(:hover)
+  .qforms-responsive-switcher.qforms-responsive-switcher-mobile_extra {
+  color: #2c3345;
+}
+.qforms-device-mobile
+  .qforms-responsive-switcher.qforms-responsive-switcher-mobile {
+  height: 2em;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+.qforms-device-mobile
+  .qforms-responsive-switchers-open:not(:hover)
+  .qforms-responsive-switcher.qforms-responsive-switcher-mobile {
+  color: #2c3345;
+}
+.qforms-update-preview {
+  margin: 15px 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-update-preview-button-wrapper {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  text-align: right;
+}
+.qforms-update-preview-button {
+  padding: 8px 15px;
+  text-transform: uppercase;
+}
+.qforms-control-direction-ltr input,
+.qforms-control-direction-ltr textarea {
+  direction: ltr;
+}
+.qforms-control-direction-rtl input,
+.qforms-control-direction-rtl textarea {
+  direction: rtl;
+}
+.qforms-control-type-button .qforms-control-input-wrapper {
+  text-align: right;
+}
+.qforms-control-type-button .qforms-button {
+  width: auto;
+  height: 26px;
+}
+.qforms-control-type-choose.qforms-label-block .qforms-choices {
+  width: 100%;
+}
+.qforms-choices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 27px;
+  line-height: 27px;
+  text-align: center;
+  border-spacing: 1px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.qforms-choices .qforms-choices-label {
+  border: 1px solid #d5dadf;
+  border-right: none;
+  font-size: 12px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  overflow: hidden;
+}
+.qforms-choices .qforms-choices-label:nth-child(2) {
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.qforms-choices .qforms-choices-label:last-child {
+  border-right: 1px solid #d5dadf;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.qforms-choices input {
+  display: none;
+}
+.qforms-choices input.e-choose-placeholder + .qforms-choices-label {
+  color: #fff;
+  background-color: #c2cbd2;
+  border-color: #c2cbd2;
+}
+.qforms-choices input:checked + .qforms-choices-label {
+  color: #fff;
+  background-color: #a4afb7;
+  border-color: #a4afb7;
+}
+.qforms-label-inline .qforms-choices {
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.rtl .qforms-control-type-choose[class*="qforms-control-align"] .qforms-choices,
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-position"]
+  .qforms-choices,
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-text_align"]
+  .qforms-choices {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-align"]
+  .qforms-choices
+  .qforms-choices-label:nth-child(2),
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-position"]
+  .qforms-choices
+  .qforms-choices-label:nth-child(2),
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-text_align"]
+  .qforms-choices
+  .qforms-choices-label:nth-child(2) {
+  border-right: 1px solid #d5dadf;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-align"]
+  .qforms-choices
+  .qforms-choices-label:last-child,
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-position"]
+  .qforms-choices
+  .qforms-choices-label:last-child,
+.rtl
+  .qforms-control-type-choose[class*="qforms-control-text_align"]
+  .qforms-choices
+  .qforms-choices-label:last-child {
+  border-right: none;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.qforms-control-type-color.e-control-global .e-global__popover-toggle ~ .pickr {
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.qforms-control-type-color .qforms-control-title {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.qforms-control-type-color .qforms-control-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+}
+.qforms-control-type-color .qforms-control-dynamic-switcher {
+  border-left-width: 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.qforms-control-type-color.qforms-control-dynamic .pickr {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.qforms-group-control-css-filter .qforms-slider {
+  height: 6px;
+  -webkit-box-shadow: 0 0 1px 1px inset rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 0 1px 1px rgba(0, 0, 0, 0.2);
+}
+.qforms-group-control-css-filter
+  .qforms-control-content
+  > .qforms-control-field
+  > .qforms-control-input-wrapper {
+  margin-top: 0;
+  margin-bottom: 5px;
+}
+.qforms-group-control-blur .qforms-slider {
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+}
+.qforms-group-control-contrast .qforms-slider {
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+.qforms-group-control-hue .qforms-slider {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(red),
+    color-stop(orange),
+    color-stop(#ff0),
+    color-stop(#adff2f),
+    color-stop(#32cd32),
+    color-stop(#00bfff),
+    color-stop(#00f),
+    color-stop(95%, #9400d3)
+  );
+  background-image: -webkit-linear-gradient(
+    left,
+    red,
+    orange,
+    #ff0,
+    #adff2f,
+    #32cd32,
+    #00bfff,
+    #00f,
+    #9400d3 95%
+  );
+  background-image: -o-linear-gradient(
+    left,
+    red,
+    orange,
+    #ff0,
+    #adff2f,
+    #32cd32,
+    #00bfff,
+    #00f,
+    #9400d3 95%
+  );
+  background-image: linear-gradient(
+    90deg,
+    red,
+    orange,
+    #ff0,
+    #adff2f,
+    #32cd32,
+    #00bfff,
+    #00f,
+    #9400d3 95%
+  );
+}
+.qforms-group-control-saturate .qforms-slider {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(grey),
+    to(red)
+  );
+  background-image: -webkit-linear-gradient(left, grey, red);
+  background-image: -o-linear-gradient(left, grey, red);
+  background-image: linear-gradient(90deg, grey, red);
+}
+.qforms-group-control-brightness .qforms-slider {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(#000),
+    to(#fff)
+  );
+  background-image: -webkit-linear-gradient(left, #000, #fff);
+  background-image: -o-linear-gradient(left, #000, #fff);
+  background-image: linear-gradient(90deg, #000, #fff);
+}
+.qforms-control-type-dimensions .qforms-control-dimensions {
+  overflow: hidden;
+}
+.qforms-control-type-dimensions li {
+  float: left;
+  width: 20%;
+}
+.qforms-control-type-dimensions li .qforms-link-dimensions,
+.qforms-control-type-dimensions li input {
+  display: block;
+  text-align: center;
+  width: 100%;
+  border-color: #d5dadf;
+  height: 27px;
+}
+.qforms-control-type-dimensions li input {
+  border-left: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  padding: 4px 0;
+}
+.qforms-control-type-dimensions li input:focus {
+  border-left: 1px solid;
+  border-color: #a4afb7;
+  margin-left: -1px;
+  width: calc(100% + 1px);
+}
+.qforms-control-type-dimensions
+  li
+  input:focus
+  + .qforms-control-dimension-label {
+  color: #a4afb7;
+}
+.qforms-control-type-dimensions li .qforms-link-dimensions {
+  border: 1px solid #d5dadf;
+  border-left: none;
+  background-color: #fff;
+  padding: 0;
+  outline: none;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.qforms-control-type-dimensions li:first-child input {
+  border-left: 1px solid #d5dadf;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.qforms-control-type-dimensions li:first-child input:focus {
+  border-color: #a4afb7;
+  margin-left: 0;
+  width: 100%;
+}
+.qforms-control-type-dimensions .qforms-control-dimension-label {
+  display: block;
+  text-align: center;
+  color: #d5dadf;
+  font-size: 9px;
+  text-transform: uppercase;
+  padding-top: 5px;
+}
+.qforms-control-type-dimensions .qforms-link-dimensions.unlinked {
+  background-color: #fff;
+}
+.qforms-control-type-dimensions
+  .qforms-link-dimensions.unlinked
+  .qforms-linked {
+  display: none;
+}
+.qforms-control-type-dimensions .qforms-link-dimensions:not(.unlinked) {
+  background-color: #a4afb7;
+  border-color: #a4afb7;
+}
+.qforms-control-type-dimensions
+  .qforms-link-dimensions:not(.unlinked)
+  .qforms-unlinked {
+  display: none;
+}
+.qforms-control-type-dimensions .qforms-link-dimensions .qforms-linked {
+  color: #fff;
+}
+.qforms-control-type-icons .qforms-control-media__preview > * {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.qforms-control-type-icons .qforms-control-media__preview i {
+  font-size: 70px;
+  color: #6d7882;
+}
+.qforms-control-type-icons .qforms-control-media__preview svg {
+  height: 75%;
+}
+.qforms-control-type-icons .qforms-control-icons--inline__svg i.eicon-upload {
+  font-size: 15px;
+}
+.qforms-control-type-gallery .qforms-control-media__content {
+  border: 1px solid #d5dadf;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.qforms-control-type-gallery .qforms-control-gallery-status {
+  font-size: 12px;
+  height: 27px;
+  padding-left: 10px;
+  border-bottom: 1px solid #d5dadf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.qforms-control-type-gallery .qforms-control-gallery-status > * {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-control-type-gallery .qforms-control-gallery-status-title {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.qforms-control-type-gallery .qforms-control-gallery-content {
+  position: relative;
+  overflow: hidden;
+}
+.qforms-control-type-gallery
+  .qforms-control-gallery-content:not(:hover)
+  .qforms-control-gallery-edit {
+  opacity: 0;
+}
+.qforms-control-type-gallery .qforms-control-gallery-thumbnails {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48px, 1fr));
+  grid-gap: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+.qforms-control-type-gallery .qforms-control-gallery-thumbnail {
+  width: 48px;
+  height: 48px;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.qforms-control-type-gallery .qforms-control-gallery-edit {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(109, 120, 130, 0.3);
+  padding: 10px;
+  font-size: 11px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  pointer-events: none;
+  cursor: pointer;
+  opacity: 1;
+}
+.qforms-control-type-gallery .qforms-control-gallery-edit span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 21px;
+  height: 21px;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  color: #a4afb7;
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.qforms-control-type-gallery .qforms-control-gallery-edit span i {
+  font-size: 11px;
+  padding: 5px;
+}
+.qforms-control-type-gallery .qforms-control-gallery-add {
+  width: 48px;
+  height: 48px;
+  color: #fff;
+  background-color: #d5dadf;
+  font-size: 14px;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+}
+.qforms-control-type-gallery .qforms-control-gallery-add:hover {
+  background-color: #c2cbd2;
+}
+.qforms-control-type-gallery .qforms-control-gallery-add i {
+  margin: 0;
+  color: #a4afb7;
+}
+.qforms-control-type-gallery.qforms-gallery-empty .qforms-control-gallery-clear,
+.qforms-control-type-gallery.qforms-gallery-empty .qforms-control-gallery-edit,
+.qforms-control-type-gallery.qforms-gallery-empty
+  .qforms-control-gallery-thumbnails {
+  display: none;
+}
+.qforms-control-type-gallery.qforms-gallery-empty
+  .qforms-control-gallery-content {
+  padding: 10px;
+}
+.qforms-control-type-gallery.qforms-gallery-has-images
+  .qforms-control-gallery-add {
+  display: none;
+}
+.qforms-control-type-gallery.qforms-control-dynamic
+  .qforms-control-gallery-clear {
+  border-left: 1px solid #d5dadf;
+}
+.qforms-control-type-gallery .qforms-control-gallery-clear {
+  cursor: pointer;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.qforms-control-type-gallery .qforms-control-gallery-clear:hover {
+  color: #b01b1b;
+}
+.qforms-control-type-gallery .qforms-control-dynamic-switcher {
+  border: 1px solid #d5dadf;
+  border-top: none;
+  border-right: none;
+  -webkit-border-radius: 0 3px 0 0;
+  border-radius: 0 3px 0 0;
+}
+.e-global__popover {
+  width: 288px;
+  z-index: 1;
+  font-size: 12px;
+  padding-left: 10px;
+}
+.e-global__popover-toggle {
+  border: 1px solid #d5dadf;
+  border-right: 0;
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.e-global__popover-toggle--active i {
+  color: #2c3345;
+}
+.e-global__popover-container {
+  -webkit-box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  padding-bottom: 5px;
+}
+.e-global__popover-title {
+  padding: 15px 20px;
+  font-weight: 500;
+  color: #6d7882;
+  border-bottom: 1px solid #e6e9ec;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.e-global__popover-title > i {
+  margin-right: 5px;
+  color: #d5dadf;
+}
+.e-global__popover-title-text {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.e-global__popover-info {
+  margin-right: 5px;
+  display: inline-block;
+}
+.e-global__popover-info-tooltip {
+  width: 270px;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.e-global__popover-info-tooltip:after {
+  content: "";
+  position: absolute;
+  bottom: -17px;
+  left: 16px;
+  border: 10px solid transparent;
+  border-top-color: rgba(0, 0, 0, 0.9);
+}
+.e-global__popover-info i {
+  color: #d5dadf;
+  font-size: 13px;
+}
+.e-global__preview-items-container {
+  max-height: 260px;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+.e-global__preview-items-container::-webkit-scrollbar {
+  width: 7px;
+}
+.e-global__preview-items-container::-webkit-scrollbar-thumb {
+  background-color: #c2cbd2;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.e-global__manage-button {
+  font-weight: 500;
+  cursor: pointer;
+}
+.e-global__manage-button:hover i {
+  color: #4ab7f4;
+}
+.e-global__manage-button i {
+  color: #6d7882;
+}
+.e-global__typography {
+  padding: 5px 10px 5px 35px;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.e-global__typography.e-global__preview-item--selected:before {
+  font-family: eicons;
+  font-size: 13px;
+  content: "\e90e";
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  top: 50%;
+  left: 12px;
+}
+.e-global__color {
+  margin: 5px auto;
+  padding: 5px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.e-global__color:first-child {
+  margin-top: 5px;
+}
+.e-global__color:last-child {
+  margin-bottom: 10px;
+}
+.e-global__color-preview-container {
+  height: 20px;
+  width: 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  margin-right: 10px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
+}
+.e-global__color-preview-color,
+.e-global__color-preview-transparent-bg {
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.e-global__color-preview-transparent-bg {
+  background-image: -webkit-linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    ),
+    -webkit-linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd
+          0, #ddd);
+  background-image: -o-linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    ),
+    -o-linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd);
+  background-image: linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    ),
+    linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    );
+  -webkit-background-size: 12px 12px;
+  background-size: 12px 12px;
+  background-position: 0 0, 6px 6px;
+}
+.e-global__color-title {
+  font-weight: 500;
+  color: #6d7882;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  padding-right: 10px;
+}
+.e-global__color-hex {
+  font-size: 10px;
+  font-weight: 500;
+  color: #c2cbd2;
+}
+.e-global__color .pcr-button {
+  background-color: #fff;
+}
+.e-global__color.e-global__preview-item--selected
+  .e-global__color-preview-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+}
+.e-global__color.e-global__preview-item--selected
+  .e-global__color-preview-container:before {
+  font-family: eicons;
+  font-size: 13px;
+  content: "\e90e";
+  text-shadow: 0 0 1px #000;
+  z-index: 1;
+}
+.e-global__preview-item {
+  cursor: pointer;
+  position: relative;
+}
+.e-global__preview-item:hover {
+  background-color: #f1f3f5;
+}
+.e-global__preview-item:hover .e-global__color-hex {
+  color: #a4afb7;
+}
+.e-global__confirm-add
+  .dialog-buttons-wrapper
+  > .dialog-button.dialog-confirm-ok {
+  color: #39b54a;
+}
+.e-global__confirm-delete i {
+  color: #b01b1b;
+}
+.e-global__confirm-message-text i {
+  color: #fcb92c;
+}
+.e-global__confirm-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid #a4afb7;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  margin-top: 10px;
+  padding: 2px;
+}
+.e-global__confirm-input-wrapper input {
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  padding: 2px;
+  border: 0;
+}
+.e-control-global .qforms-control-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  max-width: 135px;
+  width: 100%;
+}
+.e-control-global.qforms-control .qforms-control-input-wrapper {
+  direction: ltr;
+}
+.e-control-global .qforms-control-spinner {
+  margin-right: 4px;
+}
+.qforms-control-type-hidden {
+  display: none !important;
+}
+.qforms-control-type-icon .select2-selection__rendered .eicon {
+  margin-right: 3px;
+}
+.qforms-control-type-image_dimensions .qforms-control-field-description {
+  margin: 0 0 15px;
+  line-height: 1.4;
+}
+.qforms-control-type-image_dimensions .qforms-control-input-wrapper {
+  overflow: hidden;
+}
+.qforms-control-type-image_dimensions .qforms-image-dimensions-field {
+  width: 65px;
+  float: left;
+}
+.qforms-control-type-image_dimensions
+  .qforms-image-dimensions-field
+  input:focus
+  + .qforms-image-dimensions-field-description {
+  color: #a4afb7;
+}
+.qforms-control-type-image_dimensions .qforms-image-dimensions-separator {
+  width: 20px;
+  text-align: center;
+  float: left;
+  padding-top: 4px;
+}
+.qforms-control-type-image_dimensions
+  .qforms-image-dimensions-field-description {
+  display: block;
+  text-transform: uppercase;
+  margin-top: 5px;
+  color: #d5dadf;
+  font-size: 9px;
+  text-align: center;
+}
+.qforms-control-type-image_dimensions .qforms-image-dimensions-apply-button {
+  float: right;
+  height: 27px;
+  width: 65px;
+}
+.qforms-control-media.qforms-media-empty
+  .qforms-control-media-area
+  .qforms-control-media__content__remove,
+.qforms-control-media.qforms-media-empty
+  .qforms-control-media-area
+  .qforms-control-media__remove,
+.qforms-control-media:not(.qforms-media-empty)
+  .qforms-control-media__content__upload-button {
+  display: none;
+}
+.qforms-control-media .qforms-control-input-wrapper {
+  border: 1px solid #d5dadf;
+}
+.qforms-control-media .eicon-plus-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+}
+.qforms-control-media__content__upload-button {
+  background-color: #d5dadf;
+}
+.qforms-control-media__preview {
+  height: 100%;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 50%;
+}
+.qforms-control-media-area {
+  background-image: -webkit-linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    ),
+    -webkit-linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd
+          0, #ddd);
+  background-image: -o-linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    ),
+    -o-linear-gradient(45deg, #ddd 25%, transparent 0, transparent 75%, #ddd 0, #ddd);
+  background-image: linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    ),
+    linear-gradient(
+      45deg,
+      #ddd 25%,
+      transparent 0,
+      transparent 75%,
+      #ddd 0,
+      #ddd
+    );
+  -webkit-background-size: 16px 16px;
+  background-size: 16px 16px;
+  background-position: 0 0, 8px 8px;
+  background-color: #f6f6f6;
+}
+.qforms-control-media-area:not(:hover) .qforms-control-media__remove {
+  display: none;
+}
+.qforms-control-media-area .eicon-video-camera {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: hsla(0, 0%, 100%, 0.7);
+  font-size: 21px;
+}
+.qforms-control-media .qforms-control-media__content {
+  cursor: pointer;
+  overflow: hidden;
+}
+.qforms-control-media .qforms-control-media__content:hover:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+}
+.qforms-control-media
+  .qforms-control-media__content:not(:hover)
+  .qforms-control-media__tools {
+  bottom: -30px;
+}
+.qforms-control-media__content,
+.qforms-control-media__tools {
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.qforms-control-media__tools {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 27px;
+}
+.qforms-control-media__tools > :not(:first-child) {
+  margin-left: 1px;
+}
+.qforms-control-media__tool {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  color: #fff;
+  background-color: rgba(109, 120, 130, 0.85);
+  font-size: 11px;
+  -webkit-transition: background 0.3s;
+  -o-transition: background 0.3s;
+  transition: background 0.3s;
+}
+.qforms-control-media__tool:hover {
+  background-color: rgba(109, 120, 130, 0.95);
+}
+.qforms-control-media__remove {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.qforms-control-media__content__remove {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  font-size: 11px;
+  color: #a4afb7;
+  background-color: hsla(0, 0%, 100%, 0.9);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.1);
+}
+.qforms-control-media__content__remove:hover {
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.4);
+}
+.qforms-control-media.qforms-media-empty .qforms-control-file-area {
+  display: none;
+}
+.qforms-control-media__file {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+  border: 1px solid #d5dadf;
+}
+.qforms-control-media__file__content {
+  padding-left: 5px;
+  font-size: 12px;
+}
+.qforms-control-media__file__content__label {
+  color: #a4afb7;
+}
+.qforms-control-media__file__content__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-weight: 500;
+}
+.qforms-control-media__file__content__info__icon {
+  margin-right: 5px;
+}
+.qforms-control-media__file__controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-left: 1px solid #d5dadf;
+}
+.qforms-control-media__file__controls__remove,
+.qforms-control-media__file__controls__upload-button {
+  width: 27px;
+  height: 27px;
+  cursor: pointer;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-control-media__file__controls__upload-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.qforms-control-media__file__controls__remove {
+  border-right: 1px solid #d5dadf;
+}
+.qforms-control-media.qforms-media-empty
+  .qforms-control-media__file__content__info,
+.qforms-control-media.qforms-media-empty
+  .qforms-control-media__file__controls__remove,
+.qforms-control-media:not(.qforms-media-empty)
+  .qforms-control-media__file__content__label {
+  display: none;
+}
+.qforms-control-media .qforms-control-dynamic-switcher {
+  border: none;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  background-color: rgba(109, 120, 130, 0.85);
+  color: #fff;
+}
+.qforms-control-media .qforms-control-dynamic-switcher:hover {
+  background-color: rgba(109, 120, 130, 0.95);
+}
+.qforms-control-type-media.qforms-control-dynamic-value
+  .qforms-control-input-wrapper {
+  border: none;
+}
+.qforms-control:not(.qforms-control-type-icons) .qforms-control-media__preview {
+  background-color: #d5dadf;
+}
+.qforms-control-type-number.qforms-control-dynamic input {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  border-right: none;
+}
+.qforms-control-type-number.qforms-control-dynamic
+  .qforms-control-dynamic-switcher {
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.qforms-control-type-order .qforms-control-oreder-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.qforms-control-type-order input {
+  display: none;
+}
+.qforms-control-type-order input:checked + .qforms-control-order-label {
+  -webkit-transform: scaleY(-1);
+  -ms-transform: scaleY(-1);
+  transform: scaleY(-1);
+}
+.qforms-control-type-order select {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.qforms-control-type-order select:not(:focus) ~ .qforms-control-order-label {
+  border-color: #d5dadf;
+}
+.qforms-control-type-order select:focus ~ .qforms-control-order-label {
+  border-color: #a4afb7;
+}
+.qforms-control-type-order .qforms-control-order-label {
+  position: relative;
+  padding: 0;
+  width: 40px;
+  border: 1px solid;
+  font-size: 10px;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  margin-left: -3px;
+  background-color: #fff;
+  cursor: pointer;
+}
+.qforms-control-type-order .qforms-control-order-label i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.qforms-control-type-popover_toggle input {
+  display: none;
+}
+.qforms-control-type-popover_toggle label {
+  cursor: pointer;
+}
+.qforms-control-type-popover_toggle .qforms-control-input-wrapper {
+  direction: rtl;
+}
+.qforms-control-type-popover_toggle
+  .qforms-control-popover-toggle-toggle:checked
+  + .qforms-control-popover-toggle-toggle-label {
+  color: #2c3345;
+}
+.qforms-control-type-popover_toggle
+  .qforms-control-popover-toggle-toggle:not(:checked)
+  ~ .qforms-control-popover-toggle-reset-label {
+  display: none;
+}
+.qforms-control-type-popover_toggle .qforms-control-popover-toggle-reset-label {
+  color: #c2cbd2;
+  margin-right: 5px;
+}
+.qforms-control-type-popover_toggle
+  .qforms-control-popover-toggle-toggle-label {
+  height: 27px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  border: 1px solid #d5dadf;
+}
+.qforms-controls-popover.e-controls-popover--typography {
+  padding-top: 0;
+}
+.e-control-global .qforms-control-popover-toggle-toggle-label {
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.qforms-control-type-repeater .qforms-control:not(.qforms-control-type-tab) {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.qforms-control-type-repeater.qforms-repeater-has-minimum-rows
+  .qforms-repeater-tool-remove {
+  display: none;
+}
+.qforms-control-type-repeater .qforms-repeater-fields {
+  margin: 10px 0;
+}
+.qforms-control-type-repeater .qforms-repeater-row-controls {
+  border: 1px solid #d5dadf;
+  border-top: 0 solid #d5dadf;
+  padding-top: 15px;
+}
+.qforms-control-type-repeater .qforms-repeater-row-controls:not(.editable) {
+  display: none;
+}
+.qforms-control-type-repeater .qforms-repeater-row-tools {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  color: #556068;
+  background-color: #d5dadf;
+  height: 40px;
+  border-spacing: 1px;
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.qforms-control-type-repeater .qforms-repeater-row-tools:hover {
+  background-color: #a4afb7;
+}
+.qforms-control-type-repeater .qforms-repeater-row-tools > div {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  > div:not(.qforms-repeater-row-handle-sortable) {
+  background-color: #fff;
+}
+.qforms-control-type-repeater .qforms-repeater-row-tools > div:hover {
+  opacity: 0.95;
+}
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  .qforms-repeater-row-item-title {
+  text-align: left;
+  padding: 0 10px;
+  font-size: 12px;
+  white-space: nowrap;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  .qforms-repeater-row-item-title
+  .eicon,
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  .qforms-repeater-row-item-title
+  i,
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  .qforms-repeater-row-item-title
+  svg {
+  margin-right: 5px;
+}
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  .qforms-repeater-row-item-title
+  img[src$="svg"] {
+  width: 1em;
+}
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  .qforms-repeater-row-tool {
+  width: 40px;
+}
+.qforms-control-type-repeater
+  .qforms-repeater-row-tools
+  .qforms-repeater-row-handle-sortable {
+  cursor: move;
+  width: 10px;
+  color: #fff;
+}
+.qforms-control-type-repeater .qforms-button-wrapper {
+  text-align: center;
+  padding-top: 5px;
+}
+.qforms-control-type-section {
+  margin-top: 10px;
+  padding: 0;
+}
+.qforms-control-type-section.qforms-open {
+  padding-bottom: 15px;
+}
+.qforms-control-type-section
+  + .qforms-control:not(.qforms-control-type-section):before {
+  display: none;
+}
+.qforms-shadow-box .qforms-shadow-slider {
+  margin-top: 10px;
+}
+.qforms-shadow-box .qforms-color-picker-wrapper .qforms-control-title {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.qforms-control-type-slider.qforms-control-dynamic input {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.qforms-control-type-slider .qforms-control-unit-2 {
+  width: 21%;
+}
+.qforms-control-type-slider.qforms-control-type-slider--multiple
+  .qforms-control-input-wrapper {
+  display: block;
+}
+.qforms-control-type-slider--multiple {
+  padding-bottom: 40px;
+}
+.qforms-control-type-slider--multiple .qforms-slider {
+  margin-top: 12px;
+  width: 98%;
+}
+.qforms-control-type-slider--handles-range .qforms-slider .noUi-handle {
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  width: 10px;
+  -webkit-transform: translateY(calc(50% - 14px)) translateX(4px);
+  -ms-transform: translateY(calc(50% - 14px)) translateX(4px);
+  transform: translateY(calc(50% - 14px)) translateX(4px);
+}
+.qforms-control-type-slider--handles-range .qforms-slider .noUi-handle:after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  height: 12px;
+  width: 11px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.qforms-control-type-slider--handles-range
+  .qforms-slider
+  .noUi-handle-lower:after {
+  left: 5px;
+  -webkit-box-shadow: 2px -2px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 2px -2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.qforms-control-type-slider--handles-range
+  .qforms-slider
+  .noUi-handle-upper:after {
+  right: 5px;
+  -webkit-box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: -2px 2px 3px 0 rgba(0, 0, 0, 0.1);
+}
+.qforms-control-type-slider .qforms-control-dynamic-switcher {
+  border-left-width: 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.qforms-control-type-slider .qforms-control-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-control-type-slider .qforms-dynamic-cover {
+  margin-top: 10px;
+}
+.qforms-slider {
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  height: 4px;
+  background-color: #d5dadf;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  cursor: pointer;
+}
+.qforms-slider-input {
+  width: 21%;
+  min-width: 54px;
+  margin-left: 12px;
+}
+.qforms-slider__extra {
+  position: relative;
+}
+.qforms-slider__labels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.qforms-slider__label {
+  font-size: 9px;
+  color: #c2cbd2;
+}
+.qforms-slider__scales {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-top: 4px;
+}
+.qforms-slider__scale {
+  width: 1px;
+  height: 21px;
+  background-color: #a4afb7;
+}
+.qforms-slider .noUi-handle {
+  height: 16px;
+  width: 16px;
+  background-color: #fff;
+  right: 0;
+  -webkit-transform: translateY(calc(50% - 14px)) translateX(8px);
+  -ms-transform: translateY(calc(50% - 14px)) translateX(8px);
+  transform: translateY(calc(50% - 14px)) translateX(8px);
+  position: absolute;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.qforms-slider .noUi-connects {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+}
+.qforms-slider .noUi-connect {
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  will-change: transform;
+  -webkit-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  transform-origin: 0 0;
+  background-color: #a4afb7;
+}
+.qforms-slider .noUi-tooltip {
+  position: absolute;
+  top: calc(100% + 5px);
+  left: calc(50% - 4px);
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 10px;
+}
+.qforms-control-type-structure .qforms-control-field {
+  display: initial;
+}
+.qforms-control-type-structure .qforms-control-structure-preset {
+  padding: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+  height: 50px;
+}
+.qforms-control-type-structure .qforms-control-structure-preset svg {
+  height: 100%;
+}
+.qforms-control-type-structure .qforms-control-structure-preset path {
+  fill: #e6e9ec;
+}
+.qforms-control-type-structure .qforms-control-structure-reset {
+  padding: 15px 20px 0;
+  font-size: 11px;
+  cursor: pointer;
+  color: #a4afb7;
+  border-top: 1px solid #e6e9ec;
+  margin: 0 -20px;
+}
+.qforms-control-type-structure .qforms-control-structure-title {
+  margin: 10px -20px 0;
+}
+.qforms-control-type-structure .qforms-control-structure-title:before {
+  height: 10px;
+  -webkit-box-shadow: inset 0 2px 4px hsla(0, 0%, 49.8%, 0.1);
+  box-shadow: inset 0 2px 4px hsla(0, 0%, 49.8%, 0.1);
+}
+.qforms-control-type-structure .qforms-control-structure-presets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.qforms-control-type-structure .qforms-control-structure-presets input {
+  display: none;
+}
+.qforms-control-type-structure
+  .qforms-control-structure-presets
+  input:checked
+  + .qforms-control-structure-preset
+  path {
+  fill: #a4afb7;
+}
+.qforms-control-type-structure .qforms-control-structure-preset-wrapper {
+  margin-bottom: 15px;
+}
+.qforms-control-type-structure .qforms-control-structure-preset-title {
+  text-align: center;
+  padding-top: 5px;
+  font-style: italic;
+  font-size: 11px;
+  color: #a4afb7;
+}
+.qforms-control-type-switcher .qforms-control-input-wrapper {
+  text-align: right;
+}
+.qforms-control-type-switcher .qforms-switch {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  height: 20px;
+  background-color: #fff;
+  -webkit-border-radius: 18px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+.qforms-control-type-switcher .qforms-switch-input {
+  display: none;
+}
+.qforms-control-type-switcher .qforms-switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 7px;
+  text-transform: uppercase;
+  background: #eceeef;
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12),
+    inset 0 0 2px rgba(0, 0, 0, 0.15);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.12),
+    inset 0 0 2px rgba(0, 0, 0, 0.15);
+  -webkit-transition: 0.15s ease-out;
+  -o-transition: 0.15s ease-out;
+  transition: 0.15s ease-out;
+  -webkit-transition-property: opacity, background;
+  -o-transition-property: opacity, background;
+  transition-property: opacity, background;
+}
+.qforms-control-type-switcher .qforms-switch-label:after,
+.qforms-control-type-switcher .qforms-switch-label:before {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  text-align: center;
+  line-height: 20px;
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+.qforms-control-type-switcher .qforms-switch-label:before {
+  content: attr(data-off);
+  right: 3px;
+  color: #a4afb7;
+  text-shadow: 0 1px hsla(0, 0%, 100%, 0.5);
+}
+.qforms-control-type-switcher .qforms-switch-label:after {
+  content: attr(data-on);
+  left: 3px;
+  color: #fff;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+  opacity: 0;
+}
+.qforms-control-type-switcher
+  .qforms-switch-input:checked
+  ~ .qforms-switch-label {
+  background: #2c3345;
+  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15),
+    inset 0 0 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.15),
+    inset 0 0 3px rgba(0, 0, 0, 0.2);
+}
+.qforms-control-type-switcher
+  .qforms-switch-input:checked
+  ~ .qforms-switch-label:before {
+  opacity: 0;
+}
+.qforms-control-type-switcher
+  .qforms-switch-input:checked
+  ~ .qforms-switch-label:after {
+  opacity: 1;
+}
+.qforms-control-type-switcher .qforms-switch-handle {
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-transition: left 0.15s ease-out;
+  -o-transition: left 0.15s ease-out;
+  transition: left 0.15s ease-out;
+}
+.qforms-control-type-switcher
+  .qforms-switch-input:checked
+  ~ .qforms-switch-handle {
+  left: auto;
+  right: 1px;
+  -webkit-box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: -1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+.qforms-control-type-tabs {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.qforms-control-type-tab {
+  text-align: center;
+  width: 100%;
+  padding: 0;
+  line-height: 25px;
+  border-top: 1px solid #d5dadf;
+  border-bottom: 1px solid #d5dadf;
+  border-right: 1px solid #d5dadf;
+  cursor: pointer;
+}
+.qforms-control-type-tab:first-child {
+  border-left: 1px solid #d5dadf;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.qforms-control-type-tab:last-child {
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+.qforms-control-type-tab.qforms-tab-active {
+  background-color: #a4afb7;
+  border-color: #a4afb7;
+  color: #fff;
+}
+.qforms-tab-close {
+  display: none !important;
+}
+.qforms-control-type-code.qforms-control-dynamic-value
+  .qforms-control-dynamic-switcher,
+.qforms-control-type-textarea.qforms-control-dynamic-value
+  .qforms-control-dynamic-switcher {
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  border-left-width: 0;
+}
+.qforms-control-type-code .qforms-control-dynamic-switcher,
+.qforms-control-type-textarea .qforms-control-dynamic-switcher {
+  -webkit-border-radius: 0 3px;
+  border-radius: 0 3px;
+}
+.qforms-control-type-code:not(.qforms-control-dynamic-value)
+  .qforms-control-dynamic-switcher,
+.qforms-control-type-textarea:not(.qforms-control-dynamic-value)
+  .qforms-control-dynamic-switcher {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  right: 0;
+}
+.qforms-control-type-code .qforms-control-input-wrapper,
+.qforms-control-type-textarea .qforms-control-input-wrapper {
+  position: relative;
+}
+.qforms-control-type-code textarea,
+.qforms-control-type-textarea textarea {
+  display: block;
+  font-family: inherit;
+}
+.qforms-control-type-code textarea:focus + .qforms-control-dynamic-switcher,
+.qforms-control-type-textarea
+  textarea:focus
+  + .qforms-control-dynamic-switcher {
+  display: none;
+}
+.qforms-control-type-code pre:focus-within + .qforms-control-dynamic-switcher,
+.qforms-control-type-textarea
+  pre:focus-within
+  + .qforms-control-dynamic-switcher {
+  display: none;
+}
+.qforms-control-type-url.qforms-control-dynamic .qforms-input {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.qforms-control-type-url .qforms-control-field {
+  position: relative;
+}
+.qforms-control-type-url.qforms-control-dynamic-value .qforms-control-url-more,
+.qforms-control-type-url:not(.qforms-control-dynamic) .qforms-control-url-more {
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.qforms-control-type-url .qforms-control-input-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.qforms-control-type-url .qforms-control-url-more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border: 1px solid #d5dadf;
+  border-left: none;
+  cursor: pointer;
+}
+.qforms-control-type-url .qforms-control-url-more i {
+  font-size: 12px;
+}
+.qforms-control-type-url .qforms-control-url-more-options {
+  display: none;
+  padding-top: 10px;
+}
+.qforms-control-type-url
+  .qforms-control-url-more-options
+  .qforms-control-field-description {
+  margin-top: 10px;
+}
+.qforms-control-type-url .qforms-control-url-option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.qforms-control-type-url .qforms-control-url-option:not(:last-child) {
+  padding-bottom: 10px;
+}
+.qforms-control-type-url .qforms-control-url-option input,
+.qforms-control-type-url .qforms-control-url-option label {
+  cursor: pointer;
+}
+.qforms-control-type-url .qforms-control-url-option-input {
+  padding: 0;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 0 5px 0 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  content: none;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #d5dadf;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.qforms-control-type-url .qforms-control-url-option-input:checked {
+  background: #2c3345;
+  border: none;
+}
+.qforms-control-type-url .qforms-control-url-option-input:checked:before {
+  display: block;
+  content: "";
+  width: 4px;
+  height: 7px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+.qforms-control-type-url .qforms-control-url-option label {
+  font-size: 12px;
+}
+.qforms-control-type-url
+  .qforms-control-url-external-hide
+  .qforms-control-url-more {
+  display: none;
+}
+.qforms-control-type-url
+  .qforms-control-url-external-show
+  .qforms-dynamic-cover,
+.qforms-control-type-url .qforms-control-url-external-show .qforms-input {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.qforms-control-type-url .qforms-control-url-autocomplete-spinner {
+  display: none;
+  position: absolute;
+  top: 5px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  font-size: 10px;
+  color: #d4d4d4;
+}
+.qforms-control-type-url .qforms-control-url__custom-attributes {
+  margin-top: 5px;
+}
+.qforms-control-type-url .qforms-control-url__custom-attributes label {
+  font-size: 12px;
+}
+.qforms-control-type-url .qforms-control-url__custom-attributes input {
+  width: 100%;
+  margin-top: 10px;
+}
+.qforms-control-type-url .qforms-input {
+  direction: ltr;
+}
+.qforms-control-type-url .qforms-input:not(:focus) + .qforms-control-url-more {
+  border-color: #d5dadf;
+}
+.qforms-control-type-url .qforms-input:focus ~ div {
+  border-color: #a4afb7;
+}
+.qforms-control-type-url .qforms-control-dynamic-switcher {
+  border-left: none;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.qforms-autocomplete-menu {
+  position: absolute;
+  background: #fff;
+  color: #495157;
+  border: 1px solid #a4afb7;
+  margin: 0;
+  list-style: none;
+  padding: 4px 0;
+  height: auto;
+  width: 100%;
+  min-width: 260px;
+  max-width: 300px;
+  max-height: 200px;
+  overflow-y: auto;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+  z-index: 1;
+}
+.qforms-autocomplete-menu .ui-menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-item-align: baseline;
+  align-self: baseline;
+  padding: 5px 8px;
+  font-size: 12px;
+  width: 100%;
+  line-height: 1.2;
+  cursor: pointer;
+}
+.qforms-autocomplete-menu .ui-menu-item.ui-state-active,
+.qforms-autocomplete-menu .ui-menu-item.ui-state-focus,
+.qforms-autocomplete-menu .ui-menu-item.ui-state-hover {
+  background: #e6e9ec;
+}
+.qforms-autocomplete-menu .qforms-autocomplete-item-info {
+  font-size: 10px;
+  padding-top: 2px;
+}
+.qforms-control-type-wp_widget .widget-inside {
+  display: block;
+}
+.qforms-control-type-wp_widget .quicktags-toolbar input {
+  width: auto;
+}
+.qforms-control-type-wysiwyg * {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+.qforms-control-type-wysiwyg .wp-editor-container {
+  border: 1px solid #e6e9ec;
+}
+.qforms-control-type-wysiwyg .wp-editor-tabs {
+  border: 1px solid #d5dadf;
+  border-bottom: none;
+  -webkit-border-radius: 3px 3px 0 0;
+  border-radius: 3px 3px 0 0;
+}
+.qforms-control-type-wysiwyg #insert-media-button {
+  height: auto;
+  line-height: 24px;
+  font-size: 10px;
+  color: #6d7882;
+  border-color: #d5dadf;
+  background-color: #e6e9ec;
+  min-height: 0;
+}
+.qforms-control-type-wysiwyg .ed_button {
+  height: 22px;
+  width: auto;
+}
+.qforms-control-type-wysiwyg .wp-media-buttons-icon {
+  height: 14px;
+  margin: 0;
+}
+.qforms-control-type-wysiwyg .wp-media-buttons-icon:before {
+  font-size: 14px;
+}
+.qforms-control-type-wysiwyg .wp-switch-editor {
+  position: static;
+  border: none;
+  margin: 0;
+  color: #6d7882;
+  font-size: 10px;
+  padding: 3px 9px 4px;
+}
+.qforms-control-type-wysiwyg .switch-html {
+  border: solid #d5dadf;
+  border-width: 0 1px;
+}
+.qforms-control-type-wysiwyg .html-active .switch-tmce {
+  background-color: transparent;
+}
+.qforms-control-type-wysiwyg .html-active .switch-html,
+.qforms-control-type-wysiwyg .tmce-active .switch-tmce {
+  background-color: #e6e9ec;
+}
+.qforms-control-type-wysiwyg .tmce-active .switch-html {
+  background-color: transparent;
+}
+.qforms-control-type-wysiwyg .mce-toolbar-grp,
+.qforms-control-type-wysiwyg .quicktags-toolbar {
+  background-color: #e6e9ec;
+}
+.qforms-control-type-wysiwyg .mce-toolbar-grp > div {
+  padding: 0 3px;
+}
+.qforms-control-type-wysiwyg .qforms-wp-editor {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.qforms-control-type-wysiwyg .mce-ico {
+  color: #6d7882;
+  font-size: 16px;
+}
+.qforms-control-type-wysiwyg .mce-btn {
+  margin-right: 0;
+  margin-left: 0;
+}
+.qforms-control-type-wysiwyg .mce-btn.mce-active,
+.qforms-control-type-wysiwyg .mce-btn:active,
+.qforms-control-type-wysiwyg .mce-btn:hover {
+  border-color: #d5dadf;
+}
+.qforms-control-type-wysiwyg .mce-path {
+  padding: 5px 10px;
+}
+.qforms-control-type-wysiwyg .mce-path-item {
+  font-size: 12px;
+  color: #6d7882;
+}
+.qforms-control-type-wysiwyg .qforms-control-dynamic-switcher {
+  border: none;
+}
+.qforms-control-type-text .qforms-control-dynamic-switcher {
+  border-left-width: 0;
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+}
+.qforms-control-type-text.qforms-control-dynamic input {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+}
+.ui-resizable-n {
+  top: -5px;
+}
+.ui-resizable-e {
+  right: -5px;
+}
+.ui-resizable-s {
+  bottom: -5px;
+}
+.ui-resizable-w {
+  left: -5px;
+}
+.ui-resizable-ne {
+  top: -5px;
+  right: -5px;
+}
+.ui-resizable-nw {
+  top: -5px;
+  left: -5px;
+}
+.ui-resizable-se {
+  bottom: -5px;
+  right: -5px;
+}
+.ui-resizable-sw {
+  bottom: -5px;
+  left: -5px;
+}
+.ui-resizable-n,
+.ui-resizable-s {
+  left: 0;
+  height: 10px;
+  width: 100%;
+  cursor: ns-resize;
+}
+.ui-resizable-e,
+.ui-resizable-w {
+  top: 0;
+  height: 100%;
+  width: 10px;
+  cursor: ew-resize;
+}
+.ui-resizable-ne,
+.ui-resizable-nw,
+.ui-resizable-se,
+.ui-resizable-sw {
+  height: 15px;
+  width: 15px;
+}
+.ui-resizable-nw,
+.ui-resizable-se {
+  cursor: nwse-resize;
+}
+.ui-resizable-ne,
+.ui-resizable-sw {
+  cursor: nesw-resize;
+}
+.ui-resizable-handle {
+  position: absolute;
+}
+.ui-resizable-resizing {
+  pointer-events: none;
+}
+@-webkit-keyframes placeholder-section {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 40px;
+    opacity: 0.9;
+  }
+}
+@keyframes placeholder-section {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 40px;
+    opacity: 0.9;
+  }
+}
+@-webkit-keyframes placeholder-widget {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 10px;
+    opacity: 0.9;
+  }
+}
+@keyframes placeholder-widget {
+  0% {
+    height: 0;
+    opacity: 0;
+  }
+  to {
+    height: 10px;
+    opacity: 0.9;
+  }
+}
+@-webkit-keyframes section-outline {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes section-outline {
+  0% {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+body.qforms-editor-active .qforms.qforms-edit-mode .article,
+body.qforms-editor-active
+  .qforms.qforms-edit-mode.layout-section
+  .entry-content {
+  overflow: visible;
+}
+body.qforms-editor-active
+  .qforms.qforms-edit-mode
+  .qforms-element-overlay
+  .qforms-editor-element-settings {
+  clear: unset;
+}
+body.qforms-editor-active
+  .qforms.qforms-edit-mode
+  .qforms-element.qforms-section {
+  overflow: visible;
+}
+.qforms-edit-area .animated {
+  -webkit-animation-fill-mode: none !important;
+  animation-fill-mode: none !important;
+}
+.qforms-edit-area ul.qforms-editor-element-settings {
+  word-break: normal;
+  padding: 0;
+}
+.qforms-edit-area .gallery {
+  opacity: 1;
+}
+.pen {
+  position: relative;
+  outline: none;
+}
+.pen:not([data-qforms-inline-editing-toolbar="advanced"]) {
+  white-space: pre-wrap;
+}
+.pen-menu {
+  -webkit-box-shadow: 1px 2px 3px -2px #222;
+  box-shadow: 1px 2px 3px -2px #222;
+  background-color: #6d7882;
+  position: fixed;
+  overflow: hidden;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 9999;
+}
+.pen-menu:after {
+  top: 100%;
+  content: "";
+  position: absolute;
+  border: 6px solid transparent;
+  border-top-color: #6d7882;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.pen-menu-below:after {
+  top: 0;
+  -webkit-transform: translateX(-50%) translateY(-100%) rotate(180deg);
+  -ms-transform: translateX(-50%) translateY(-100%) rotate(180deg);
+  transform: translateX(-50%) translateY(-100%) rotate(180deg);
+}
+.pen-icon {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 35px;
+  padding: 0 10px;
+  font-size: 21px;
+  color: #d5dadf;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.pen-icon:hover {
+  background: #556068;
+}
+.pen-icon[data-action="closeGroup"],
+.pen-icon[data-group] {
+  display: none;
+}
+.pen-icon[data-action="close"]:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 60%;
+  width: 1px;
+  background-color: #556068;
+}
+.pen-icon.active {
+  background-color: #556068;
+  -webkit-box-shadow: inset 2px 2px 4px #556068;
+  box-shadow: inset 2px 2px 4px #556068;
+}
+.pen-group-icon:after {
+  font-family: eicons;
+  font-size: 12px;
+  content: "\e92a";
+  padding-left: 4px;
+  color: #2c3345;
+}
+.pen-input-wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.pen-input-wrapper .pen-url-input {
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 0 10px;
+  width: 250px;
+  direction: ltr;
+}
+.pen-input-wrapper .pen-url-input,
+.pen-input-wrapper .pen-url-input:focus {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+}
+.pen-input-wrapper .pen-url-input::-webkit-input-placeholder {
+  color: #d5dadf;
+}
+.pen-input-wrapper .pen-url-input::-moz-placeholder {
+  color: #d5dadf;
+}
+.pen-input-wrapper .pen-url-input::-ms-input-placeholder {
+  color: #d5dadf;
+}
+.pen-input-wrapper .pen-url-input::placeholder {
+  color: #d5dadf;
+}
+.pen-input-label {
+  margin: 0 -1px 0 0;
+}
+.pen-placeholder:before {
+  content: attr(data-pen-placeholder);
+  position: absolute;
+  font-weight: 400;
+  color: #757575;
+  opacity: 0.6;
+}
+.pen-external-url-checkbox {
+  display: none;
+}
+.pen-external-url-checkbox:checked + i {
+  color: #fff;
+}
+.qforms-inline-editing i:not([class]) {
+  font-style: italic;
+}
+.qforms-inline-editing b {
+  font-weight: 700;
+}
+.qforms-inline-editing u {
+  text-decoration: underline;
+}
+.e-element-color-picker {
+  --primary-color: #2c3345;
+  --swatch-size: 25px;
+  cursor: default;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: calc(calc(var(--count) + 1) * var(--swatch-size));
+  height: var(--swatch-size);
+  top: var(--top);
+  left: var(--left);
+  right: var(--right, unset);
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  z-index: 9998;
+  background-color: var(--primary-color);
+  padding: 1px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  -webkit-transition: opacity 0.3s, width 0.3s;
+  -o-transition: opacity 0.3s, width 0.3s;
+  transition: opacity 0.3s, width 0.3s;
+}
+.e-element-color-picker,
+.e-element-color-picker.e-picker-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.e-element-color-picker:before {
+  content: "";
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 var(--swatch-size);
+  flex: 0 1 var(--swatch-size);
+  max-width: 100%;
+  height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+.e-element-color-picker:after {
+  content: "\e91e";
+  font-family: eicons;
+  color: #fff;
+  font-size: 1rem;
+  line-height: var(--swatch-size);
+  position: absolute;
+  left: 0.3rem;
+  z-index: -1;
+}
+.e-element-color-picker__swatch {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 var(--swatch-size);
+  flex: 1 0 var(--swatch-size);
+  max-width: 100%;
+  height: 100%;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+  -webkit-border-radius: inherit;
+  border-radius: inherit;
+  background: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(var(--color)),
+      to(var(--color))
+    ),
+    -webkit-gradient(linear, left top, left bottom, from(var(--primary-color)), to(var(--primary-color)));
+  background: -webkit-linear-gradient(var(--color), var(--color)),
+    -webkit-linear-gradient(var(--primary-color), var(--primary-color));
+  background: -o-linear-gradient(var(--color), var(--color)),
+    -o-linear-gradient(var(--primary-color), var(--primary-color));
+  background: linear-gradient(var(--color), var(--color)),
+    linear-gradient(var(--primary-color), var(--primary-color));
+}
+.e-element-color-picker__swatch:not(:first-child) {
+  border-left: 1px solid var(--primary-color);
+}
+.e-element-color-picker__swatch:before {
+  content: attr(data-text);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  color: var(--color);
+  font-size: 10px;
+  font-weight: 300;
+  font-family: Roboto, Arial, Helvetica, Verdana, sans-serif;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-filter: hue-rotate(180deg) grayscale(1) contrast(999) invert(1);
+  filter: hue-rotate(180deg) grayscale(1) contrast(999) invert(1);
+  -webkit-transition: inherit;
+  -o-transition: inherit;
+  transition: inherit;
+}
+.e-element-color-picker__swatch:hover {
+  -ms-flex-preferred-size: calc(2 * var(--swatch-size));
+  flex-basis: calc(2 * var(--swatch-size));
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+.e-element-color-picker__swatch:hover:before {
+  opacity: 1;
+}
+.e-ui-state--elements-color-picker-color-picking__on
+  :not(.e-element-color-picker__swatch) {
+}
+.e-ui-state--elements-color-picker-color-picking__on
+  .e-element-color-picker:not(.e-picker-hidden):hover,
+.e-ui-state--elements-color-picker-color-picking__on
+  .qforms-element:hover
+  > .e-element-color-picker:not(.e-picker-hidden),
+.e-ui-state--elements-color-picker-color-picking__on
+  .qforms-widget-container:hover
+  + .e-element-color-picker:not(.e-picker-hidden) {
+  opacity: 1;
+  pointer-events: all;
+}
+.e-ui-state--elements-color-picker-color-picking__on .qforms-section:hover {
+  outline: 1px solid #2c3345;
+}
+html.qforms-html {
+  margin-top: 0 !important;
+}
+.qforms-edit-area {
+  position: relative;
+}
+.qforms.loading {
+  opacity: 0.5;
+}
+.qforms-edit-area-active .qforms-inner-section:first-child {
+  margin-top: 15px;
+}
+.qforms-edit-area-active .qforms-widget-wrap.qforms-element-empty {
+  min-height: 30px;
+}
+@media (min-width: 1024px) {
+  .qforms-edit-area-active .qforms-widget-wrap.qforms-element-empty {
+    margin: 10px;
+  }
+}
+.qforms-edit-area-active .qforms-column {
+  min-width: 25px;
+}
+.qforms-edit-area-active .qforms-widget.qforms-loading {
+  opacity: 0.3;
+}
+.qforms-edit-area-active .qforms-widget.qforms-element-edit-mode:hover,
+.qforms-edit-area-active .qforms-widget.qforms-element-editable {
+  -webkit-box-shadow: 0 0 0 1px #2c3345;
+  box-shadow: 0 0 0 1px #2c3345;
+}
+.qforms-edit-area-active
+  .qforms-widget:not(:hover)
+  .qforms-editor-element-settings {
+  display: none;
+}
+.qforms-edit-area-active .qforms-widget.ui-draggable-dragging {
+  pointer-events: none;
+}
+.qforms-edit-area-active .qforms-editor-element-setting {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  font-size: 11px;
+  color: #fff;
+  width: 25px;
+  -webkit-transition: margin 0.3s, width 0.3s, font 0.3s;
+  -o-transition: margin 0.3s, width 0.3s, font 0.3s;
+  transition: margin 0.3s, width 0.3s, font 0.3s;
+  padding: 4px 0;
+}
+.qforms-edit-area-active .qforms-inline-editing {
+  min-height: 15px;
+}
+.qforms-edit-area-active .qforms-edit-hidden {
+  display: none;
+}
+.qforms-section-wrap:empty {
+  min-height: 25px;
+}
+.qforms-element > .qforms-element-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  letter-spacing: 0;
+  // z-index: 9999;
+  z-index: 1;
+  pointer-events: none;
+}
+.qforms-element-empty .qforms-sortable-placeholder {
+  display: none;
+}
+.qforms-element.qforms-widget-empty {
+  background-color: rgba(213, 218, 223, 0.8);
+}
+.qforms-element.qforms-widget-empty .qforms-widget-empty-icon {
+  color: #c2cbd2;
+  font-size: 22px;
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+}
+.qforms-element:not(:hover):not(.qforms-element-editable)
+  > .qforms-element-overlay
+  .qforms-editor-element-settings {
+  display: none;
+}
+.qforms-element--toggle-edit-tools
+  > .qforms-element-overlay
+  .qforms-editor-element-edit:not(.qforms-active)
+  ~ * {
+  width: 0;
+  font-size: 0;
+}
+.qforms-element[data-side="bottom"] + .qforms-element:before,
+.qforms-element[data-side="bottom"]:last-child:after,
+.qforms-element[data-side="top"]:before {
+  content: "";
+  background-color: #2c3345;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  opacity: 0.9;
+  height: 10px;
+  -webkit-animation: placeholder-widget 0.5s;
+  animation: placeholder-widget 0.5s;
+  display: block;
+}
+.qforms-element.qforms-absolute,
+.qforms-element.qforms-fixed {
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.qforms-element.qforms-absolute:active,
+.qforms-element.qforms-fixed:active {
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.qforms-element.qforms-absolute .eicon-edit:before,
+.qforms-element.qforms-fixed .eicon-edit:before {
+  content: "\e902";
+}
+.qforms-section > .qforms-element-overlay {
+  left: 0;
+  bottom: 0;
+}
+.qforms-section > .qforms-element-overlay:after {
+  position: absolute;
+  left: 2px;
+  right: 2px;
+  top: 2px;
+  bottom: 10px;
+  outline: 1px solid #bbc3cb;
+  -webkit-animation: section-outline 0.75s;
+  animation: section-outline 0.75s;
+}
+/*
+.qforms-element:hover{
+    left: 2px;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+    outline: 1px solid #2c3345;
+    -webkit-animation: section-outline 0.75s;
+    animation: section-outline 0.75s;
+}
+*/
+
+.qforms-section.qforms-element-editable > .qforms-element-overlay:after,
+.qforms-section:hover > .qforms-element-overlay:after {
+  content: "";
+}
+.qforms-section-filled .qforms-sortable-placeholder.qforms-column {
+  display: none;
+}
+.qforms-section-filled .qforms-row.qforms-draggable-over {
+  border: 1px solid #d72b3f;
+}
+.qforms-column > .qforms-element-overlay {
+  left: 0;
+  bottom: 0;
+}
+.qforms-column > .qforms-element-overlay:after {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  outline: 1px dashed #6d7882;
+}
+.qforms-column.qforms-element-editable > .qforms-element-overlay,
+.qforms-column:hover > .qforms-element-overlay {
+  border: 1px solid #fff;
+}
+.qforms-column.qforms-element-editable > .qforms-element-overlay:after,
+.qforms-column:hover > .qforms-element-overlay:after {
+  content: "";
+}
+.qforms-column.qforms-dragging-on-child > .qforms-element-overlay {
+  border: 1px solid #2c3345;
+}
+.qforms-column.qforms-dragging-on-child > .qforms-element-overlay:after {
+  display: none;
+}
+.qforms-column > .ui-resizable-e,
+.qforms-column > .ui-resizable-w {
+  cursor: col-resize;
+  width: 7px;
+  position: absolute;
+  right: -5px;
+  top: 0;
+  height: 100%;
+}
+.qforms-column:last-of-type > .ui-resizable-e,
+.qforms-column:last-of-type > .ui-resizable-w {
+  display: none !important;
+}
+@media (max-width: 1024px) {
+  .qforms-column > .ui-resizable-e,
+  .qforms-column > .ui-resizable-w {
+    display: none !important;
+  }
+}
+.qforms-editor-element-settings {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* height: 26px; */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1;
+  z-index: 1;
+  pointer-events: all;
+}
+@media (min-width: 1025px) {
+  .qforms-editor-element-edit {
+    cursor: move;
+  }
+}
+
+.qforms-editor-section-settings {
+  height: 23px;
+  top: 2px;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-100%);
+  -ms-transform: translateX(-50%) translateY(-100%);
+  transform: translateX(-50%) translateY(-100%);
+  background-color: #405189;
+  -webkit-border-radius: 5px 5px 0 0;
+  border-radius: 5px 5px 0 0;
+  -webkit-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+}
+.qforms-editor-section-settings i.eicon-handle {
+  font-size: 16px;
+}
+.qforms-editor-section-settings .qforms-editor-element-setting:hover {
+  background-color: #10bcf2;
+}
+.qforms-editor-section-settings .qforms-editor-element-setting:first-child {
+  -webkit-border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 0;
+}
+.qforms-editor-section-settings
+  .qforms-editor-element-setting:first-child:before {
+  content: "";
+  position: absolute;
+  top: 1px;
+  border: solid transparent;
+  border-right: solid #405189;
+  border-width: 22px 12px 0 0;
+  right: calc(100% - 1px);
+}
+.qforms-editor-section-settings
+  .qforms-editor-element-setting:first-child:hover:before {
+  border-right-color: #10bcf2;
+}
+.qforms-editor-section-settings .qforms-editor-element-setting:last-child {
+  -webkit-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+}
+.qforms-editor-section-settings
+  .qforms-editor-element-setting:last-child:after {
+  content: "";
+  position: absolute;
+  top: 1px;
+  border: solid transparent;
+  border-left: solid #405189;
+  border-width: 22px 0 0 12px;
+  left: calc(100% - 1px);
+}
+.qforms-editor-section-settings
+  .qforms-editor-element-setting:last-child:hover:after {
+  border-left-color: #10bcf2;
+}
+.qforms-section--handles-inside .qforms-editor-section-settings {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+.qforms-section--handles-inside
+  .qforms-editor-section-settings
+  .qforms-editor-element-setting:first-child {
+  -webkit-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+}
+.qforms-section--handles-inside
+  .qforms-editor-section-settings
+  .qforms-editor-element-setting:first-child:before {
+  top: 0;
+  border-width: 0 12px 22px 0;
+}
+.qforms-section--handles-inside
+  .qforms-editor-section-settings
+  .qforms-editor-element-setting:last-child {
+  -webkit-border-radius: 0 0 5px 0;
+  border-radius: 0 0 5px 0;
+}
+.qforms-section--handles-inside
+  .qforms-editor-section-settings
+  .qforms-editor-element-setting:last-child:after {
+  top: 0;
+  border-width: 0 0 22px 12px;
+}
+.qforms-editor-column-settings {
+  top: -1px;
+  left: -1px;
+  -webkit-border-radius: 0 0 3px 0;
+  border-radius: 0 0 3px 0;
+  overflow: hidden;
+}
+.qforms-editor-column-settings .qforms-editor-element-setting {
+  background-color: #495157;
+}
+.qforms-editor-column-settings .qforms-editor-element-setting:not(:hover) {
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#6d7882),
+    to(#556068)
+  );
+  background-image: -webkit-linear-gradient(top, #6d7882, #556068);
+  background-image: -o-linear-gradient(top, #6d7882, #556068);
+  background-image: linear-gradient(180deg, #6d7882, #556068);
+}
+.qforms-editor-widget-settings {
+  z-index: 2;
+  top: -1px;
+  right: -1px;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-border-radius: 0 0 0 3px;
+  border-radius: 0 0 0 3px;
+  overflow: hidden;
+}
+.qforms-editor-widget-settings .qforms-editor-element-setting {
+  background-color: #10bcf2;
+}
+.qforms-editor-widget-settings .qforms-editor-element-setting:not(:hover) {
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(#41c9f4),
+    to(#2c3345)
+  );
+  background-image: -webkit-linear-gradient(bottom, #41c9f4, #2c3345);
+  background-image: -o-linear-gradient(bottom, #41c9f4, #2c3345);
+  background-image: linear-gradient(0deg, #41c9f4, #2c3345);
+}
+.qforms-empty-view {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+.qforms-first-add {
+  text-align: center;
+  border: 1px dashed #d5dadf;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.qforms-first-add .qforms-icon {
+  font-size: 19px;
+  color: #a4afb7;
+  cursor: pointer;
+}
+.qforms-sortable-helper {
+  position: absolute;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fff;
+  text-align: center;
+  color: #556068;
+  -webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  cursor: move;
+}
+.qforms-sortable-helper .icon {
+  font-size: 28px;
+  padding-top: 15px;
+  line-height: 1;
+}
+.qforms-sortable-helper .qforms-element-title-wrapper {
+  display: table;
+  width: 100%;
+}
+.qforms-sortable-helper .title {
+  font-size: 11px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  display: table-cell;
+  vertical-align: middle;
+  height: 40px;
+}
+.qforms-editor-content-only
+  .qforms-column.qforms-element-editable
+  > .qforms-element-overlay:after,
+.qforms-editor-content-only
+  .qforms-column:hover
+  > .qforms-element-overlay:after,
+.qforms-editor-content-only .qforms-column > .qforms-element-overlay,
+.qforms-editor-content-only .qforms-column > .qforms-element-overlay:after,
+.qforms-editor-content-only .qforms-first-add,
+.qforms-editor-content-only
+  .qforms-section.qforms-element-editable
+  > .qforms-element-overlay:after,
+.qforms-editor-content-only
+  .qforms-section:hover
+  > .qforms-element-overlay:after,
+.qforms-editor-content-only .qforms-section > .qforms-element-overlay,
+.qforms-editor-content-only .qforms-section > .qforms-element-overlay:after {
+  display: none;
+}
+@media (min-width: 1025px) {
+  .qforms-editor-content-only .qforms-editor-element-edit {
+    cursor: pointer;
+  }
+}
+.qforms-sortable-placeholder:not(.qforms-column-placeholder) {
+  background-color: #2c3345;
+  -webkit-animation-duration: 0.25s;
+  animation-duration: 0.25s;
+  opacity: 0.9;
+  width: 100%;
+  -ms-flex-item-align: stretch;
+  align-self: stretch;
+}
+.qforms-section-placeholder {
+  height: 40px;
+  -webkit-animation-name: placeholder-section;
+  animation-name: placeholder-section;
+}
+.qforms-column-placeholder {
+  position: relative;
+}
+.qforms-column-placeholder:after,
+.qforms-column-placeholder:before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  right: 10px;
+  left: 10px;
+}
+.qforms-column-placeholder:before {
+  border: 1px solid #6d7882;
+}
+.qforms-column-placeholder:after {
+  border: 1px dashed #fff;
+}
+.qforms-widget-placeholder {
+  height: 10px;
+  -webkit-animation-name: placeholder-widget;
+  animation-name: placeholder-widget;
+}
+.qforms-draggable-over:not([data-dragged-element="section"]):not(
+    [data-dragged-is-inner="true"]
+  )
+  > .qforms-empty-view
+  > .qforms-first-add:after,
+.qforms-first-add.qforms-html5dnd-current-element:after {
+  content: "";
+  background-color: #2c3345;
+  -webkit-transition-timing-function: ease-out;
+  -o-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+  opacity: 0.9;
+  height: 10px;
+  -webkit-animation: placeholder-widget 0.5s;
+  animation: placeholder-widget 0.5s;
+  width: 100%;
+}
+.qforms-draggable-over:not([data-dragged-element="section"]):not(
+    [data-dragged-is-inner="true"]
+  )
+  > .qforms-empty-view
+  > .qforms-first-add
+  .qforms-icon,
+.qforms-draggable-over[data-dragged-element="section"][data-dragged-is-inner="true"]
+  .qforms-inner-column
+  .qforms-sortable-placeholder,
+.qforms-first-add.qforms-html5dnd-current-element .qforms-icon {
+  display: none;
+}
+.qforms-add-section {
+  all: initial;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1160px;
+  position: relative;
+}
+.qforms-add-section:not(.qforms-dragging-on-child) .qforms-add-section-inner {
+  border: 2px dashed #d5dadf;
+  background-color: hsla(0, 0%, 100%, 0.5);
+  background-color: white !important;
+}
+.qforms-add-section.qforms-dragging-on-child .qforms-add-section-inner {
+  border: 3px dashed #2c3345;
+}
+.qforms-add-section[data-view="choose-action"] .qforms-select-preset,
+.qforms-add-section[data-view="select-preset"] .qforms-add-new-section {
+  display: none;
+}
+.qforms-add-section-inner {
+  text-align: center;
+  margin: 20px;
+  padding: 40px 0;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+}
+.qforms-add-new-section {
+  display: inline-block;
+}
+.qforms-add-new-section .qforms-add-section-area-button {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  color: #fff;
+  font-size: 16px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.qforms-add-new-section .qforms-add-section-area-button:hover {
+  opacity: 0.85;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+.qforms-add-new-section .qforms-add-section-area-button:active {
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+.qforms-add-new-section .qforms-add-section-button {
+  background-color: #93003c;
+}
+.qforms-add-new-section .qforms-add-template-button {
+  background-color: #6d7882;
+  margin-left: 5px;
+}
+.qforms-add-section-drag-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1;
+  color: #556068;
+  margin-top: 15px;
+}
+.qforms-add-section-close {
+  position: absolute;
+  right: 40px;
+  top: 40px;
+  font-size: 20px;
+  cursor: pointer;
+  line-height: 1;
+  color: #d5dadf;
+}
+.qforms-add-section-close:hover {
+  color: #6d7882;
+}
+.qforms-select-preset-title {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #556068;
+}
+.qforms-select-preset-list {
+  list-style: none;
+}
+.qforms-select-preset-list .qforms-preset {
+  cursor: pointer;
+  margin: 0;
+  padding: 10px;
+  float: left;
+  max-width: 33.333%;
+}
+.qforms-select-preset-list .qforms-preset:hover path {
+  fill: #6d7882;
+}
+.qforms-select-preset-list .qforms-preset:not(:hover) path {
+  fill: #d5dadf;
+}
+.qforms-select-preset-list .qforms-preset svg {
+  height: 50px;
+  width: 100%;
+}
+#qforms-add-new-section {
+  margin: auto;
+}
+#qforms-add-new-section[data-view="choose-action"] .qforms-add-section-close {
+  display: none;
+}
+.qforms-add-section-inline {
+  margin: 10px auto;
+}
+.qforms-column-percents-tooltip {
+  position: absolute;
+  display: none;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  color: #fff;
+  font-size: 10px;
+  background-color: #556068;
+  width: 40px;
+  padding: 3.5px 0;
+  text-align: center;
+  z-index: 1;
+  line-height: 1;
+}
+.qforms-column-percents-tooltip:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 8.5px solid transparent;
+  top: 0;
+}
+.qforms-column-percents-tooltip[data-side="left"] {
+  -webkit-border-radius: 3px 0 0 3px;
+  border-radius: 3px 0 0 3px;
+  right: 15px;
+}
+.qforms-column-percents-tooltip[data-side="left"]:after {
+  left: 100%;
+  border-left-color: #556068;
+  border-right-width: 0;
+}
+.qforms-column-percents-tooltip[data-side="right"] {
+  -webkit-border-radius: 0 3px 3px 0;
+  border-radius: 0 3px 3px 0;
+  left: 15px;
+}
+.qforms-column-percents-tooltip[data-side="right"]:after {
+  right: 100%;
+  border-right-color: #556068;
+  border-left-width: 0;
+}
+.qforms-editor-preview .qforms-add-section,
+.qforms-editor-preview .qforms-add-section-inline,
+.qforms-editor-preview .qforms-element-overlay,
+.qforms-editor-preview .qforms-empty,
+.qforms-editor-preview .qforms-empty-view,
+.qforms-editor-preview .qforms-widget-empty {
+  display: none;
+}
+.e-preview--show-hidden-elements[data-qforms-device-mode="desktop"]
+  .qforms-edit-area-active
+  .qforms-hidden-desktop,
+.e-preview--show-hidden-elements[data-qforms-device-mode="laptop"]
+  .qforms-edit-area-active
+  .qforms-hidden-laptop,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile_extra,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet_extra,
+.e-preview--show-hidden-elements[data-qforms-device-mode="widescreen"]
+  .qforms-edit-area-active
+  .qforms-hidden-widescreen {
+  display: inherit;
+  background: -webkit-repeating-linear-gradient(
+    325deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 2px,
+    transparent 9px
+  );
+  background: -o-repeating-linear-gradient(
+    325deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 2px,
+    transparent 9px
+  );
+  background: repeating-linear-gradient(
+    125deg,
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0.05) 1px,
+    transparent 2px,
+    transparent 9px
+  );
+  border: 1px solid rgba(0, 0, 0, 0.02);
+}
+.e-preview--show-hidden-elements[data-qforms-device-mode="desktop"]
+  .qforms-edit-area-active
+  .qforms-hidden-desktop.qforms-section
+  > .qforms-element-overlay,
+.e-preview--show-hidden-elements[data-qforms-device-mode="laptop"]
+  .qforms-edit-area-active
+  .qforms-hidden-laptop.qforms-section
+  > .qforms-element-overlay,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile.qforms-section
+  > .qforms-element-overlay,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile_extra.qforms-section
+  > .qforms-element-overlay,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet.qforms-section
+  > .qforms-element-overlay,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet_extra.qforms-section
+  > .qforms-element-overlay,
+.e-preview--show-hidden-elements[data-qforms-device-mode="widescreen"]
+  .qforms-edit-area-active
+  .qforms-hidden-widescreen.qforms-section
+  > .qforms-element-overlay {
+  background-color: #d5dadf;
+  mix-blend-mode: color;
+}
+.e-preview--show-hidden-elements[data-qforms-device-mode="desktop"]
+  .qforms-edit-area-active
+  .qforms-hidden-desktop.qforms-section:before,
+.e-preview--show-hidden-elements[data-qforms-device-mode="laptop"]
+  .qforms-edit-area-active
+  .qforms-hidden-laptop.qforms-section:before,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile.qforms-section:before,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile_extra.qforms-section:before,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet.qforms-section:before,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet_extra.qforms-section:before,
+.e-preview--show-hidden-elements[data-qforms-device-mode="widescreen"]
+  .qforms-edit-area-active
+  .qforms-hidden-widescreen.qforms-section:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: hsla(0, 0%, 100%, 0.6);
+  z-index: 9997;
+}
+.e-preview--show-hidden-elements[data-qforms-device-mode="desktop"]
+  .qforms-edit-area-active
+  .qforms-hidden-desktop.qforms-inner-section
+  .qforms-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="laptop"]
+  .qforms-edit-area-active
+  .qforms-hidden-laptop.qforms-inner-section
+  .qforms-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile.qforms-inner-section
+  .qforms-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile_extra.qforms-inner-section
+  .qforms-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet.qforms-inner-section
+  .qforms-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet_extra.qforms-inner-section
+  .qforms-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="widescreen"]
+  .qforms-edit-area-active
+  .qforms-hidden-widescreen.qforms-inner-section
+  .qforms-container {
+  width: 100%;
+}
+.e-preview--show-hidden-elements[data-qforms-device-mode="desktop"]
+  .qforms-edit-area-active
+  .qforms-hidden-desktop
+  > .qforms-widget-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="desktop"]
+  .qforms-edit-area-active
+  .qforms-hidden-desktop
+  > .qforms-widget-wrap,
+.e-preview--show-hidden-elements[data-qforms-device-mode="laptop"]
+  .qforms-edit-area-active
+  .qforms-hidden-laptop
+  > .qforms-widget-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="laptop"]
+  .qforms-edit-area-active
+  .qforms-hidden-laptop
+  > .qforms-widget-wrap,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile
+  > .qforms-widget-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile
+  > .qforms-widget-wrap,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile_extra
+  > .qforms-widget-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile_extra
+  > .qforms-widget-wrap,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet
+  > .qforms-widget-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet
+  > .qforms-widget-wrap,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet_extra
+  > .qforms-widget-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet_extra
+  > .qforms-widget-wrap,
+.e-preview--show-hidden-elements[data-qforms-device-mode="widescreen"]
+  .qforms-edit-area-active
+  .qforms-hidden-widescreen
+  > .qforms-widget-container,
+.e-preview--show-hidden-elements[data-qforms-device-mode="widescreen"]
+  .qforms-edit-area-active
+  .qforms-hidden-widescreen
+  > .qforms-widget-wrap {
+  -webkit-filter: opacity(0.4) saturate(0);
+  filter: opacity(0.4) saturate(0);
+}
+.e-preview--show-hidden-elements[data-qforms-device-mode="desktop"]
+  .qforms-edit-area-active
+  .qforms-hidden-desktop.qforms-edit-hidden,
+.e-preview--show-hidden-elements[data-qforms-device-mode="laptop"]
+  .qforms-edit-area-active
+  .qforms-hidden-laptop.qforms-edit-hidden,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile.qforms-edit-hidden,
+.e-preview--show-hidden-elements[data-qforms-device-mode="mobile_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-mobile_extra.qforms-edit-hidden,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet.qforms-edit-hidden,
+.e-preview--show-hidden-elements[data-qforms-device-mode="tablet_extra"]
+  .qforms-edit-area-active
+  .qforms-hidden-tablet_extra.qforms-edit-hidden,
+.e-preview--show-hidden-elements[data-qforms-device-mode="widescreen"]
+  .qforms-edit-area-active
+  .qforms-hidden-widescreen.qforms-edit-hidden {
+  display: none;
+}
+
+/* Column Hover Icons CSS */
+.qforms-editor-collayout-settings {
+  display: none;
+}
+
+.show-action-buttons:hover .qforms-editor-collayout-settings {
+  display: flex;
+  // flex-direction: column;
+}
+
+// .show-action-buttons.selected .qforms-editor-collayout-settings {
+//   display: flex;
+//   // flex-direction: column;
+// }
+
+.show-action-buttons .qforms-editor-collayout-settings {
+  /* height: 24px; */
+  top: 0;
+  right: 0;
+  /* -webkit-transform: translateX(-50%) translateY(-63%);
+    -ms-transform: translateX(-50%) translateY(-63%);
+    transform: translateX(-50%) translateY(-63%); */
+  background-color: #405189;
+  /* -webkit-border-radius: 5px 5px 0 0; */
+  /* border-radius: 5px 5px 0 0; */
+  -webkit-box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.05);
+  // z-index: 99999;
+}
+.show-action-buttons .qforms-editor-collayout-settings i.eicon-handle {
+  font-size: 16px;
+}
+.show-action-buttons
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:hover {
+  background-color: #10bcf2;
+}
+.show-action-buttons
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:first-child {
+  -webkit-border-radius: 5px 0 0 0;
+  border-radius: 5px 0 0 0;
+  padding: 4px 0;
+}
+.show-action-buttons
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:first-child:before {
+  /* content: ""; */
+  position: absolute;
+  top: -19px;
+  border: solid transparent;
+  border-bottom: solid #bbc3cb;
+  border-width: 5px 0px 14px 25px;
+  left: calc(50% - 12px);
+}
+.show-action-buttons
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:first-child:hover:before {
+  border-right-color: #10bcf2;
+}
+.show-action-buttons
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:last-child {
+  -webkit-border-radius: 0 5px 0 0;
+  border-radius: 0 5px 0 0;
+  padding: 4px 0;
+}
+.show-action-buttons
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:last-child:after {
+  /* content: ""; */
+  position: absolute;
+  bottom: -13px;
+  border: solid transparent;
+  border-top: solid #bbc3cb;
+  border-width: 13px 0px 0px 24px;
+  left: calc(50% - 11px);
+}
+.show-action-buttons
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:last-child:hover:after {
+  /* border-left-color: #10bcf2; */
+}
+.show-action-buttons
+  .qforms-section--handles-inside
+  .qforms-editor-collayout-settings {
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  -webkit-border-radius: 0 0 5px 5px;
+  border-radius: 0 0 5px 5px;
+}
+.show-action-buttons
+  .qforms-section--handles-inside
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:first-child {
+  -webkit-border-radius: 0 0 0 5px;
+  border-radius: 0 0 0 5px;
+}
+.show-action-buttons
+  .qforms-section--handles-inside
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:first-child:before {
+  top: 0;
+  border-width: 0 12px 22px 0;
+}
+.show-action-buttons
+  .qforms-section--handles-inside
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:last-child {
+  -webkit-border-radius: 0 0 5px 0;
+  border-radius: 0 0 5px 0;
+}
+.show-action-buttons
+  .qforms-section--handles-inside
+  .qforms-editor-collayout-settings
+  .qforms-editor-element-setting:last-child:after {
+  top: 0;
+  border-width: 0 0 22px 12px;
+}
+
+.qforms-edit-area-active
+  .qforms-inner-section
+  > .qforms-container
+  > .qforms-row,
+.qforms-edit-area-active .qforms-top-section > .qforms-container > .qforms-row {
+  min-height: 120px;
+}
+.qforms-edit-area-active
+  .qforms-column-wrap.qforms-element-empty
+  .qforms-widget-wrap {
+  min-height: 100px;
+}
+@media (min-width: 1024px) {
+  .qforms-edit-area-active
+    .qforms-column-wrap.qforms-element-empty
+    .qforms-widget-wrap {
+    margin: 6px;
+  }
+}
+.qforms-edit-area-active .handle {
+  display: none;
+}
+
+.show-action-buttons:hover .control-action-buttons {
+  display: block;
+}
+
+.qforms-row-hide {
+  display: none;
+  z-index: 1000;
+}
+
+.qforms-clear-hide {
+  display: none !important;
+}
+
+.qforms-element:hover .qforms-row-hide {
+  display: block;
+}
+
+.show-action-buttons:not(.form-view):hover {
+  border: 1px solid #bbc3cb !important;
+}
