@@ -4,7 +4,7 @@ MIT
 @angular-slider/ngx-slider
 MIT
 The MIT License (MIT)
-
+   
 Copyright (c) 2013 Rafal Zajac <rzajac@gmail.com>
 Copyright (c) 2018 Piotr Dziwinski <piotrdz@gmail.com>
 
